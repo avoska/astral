@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Alexandra;
+    src: url(../fonts/alexandra-zeferino-two.ttf);
+   }
+body {
+	background: url("../img/body_bg.jpg");
+	background-size: cover;
+	max-height: 100vh;
+	height: 100vh;
+}
+.color_1{
+	background-color: #F19084;
+}
+.well{
+	background: rgba(255, 255, 255, .75);
+	border-radius: 0;
+	margin-top: 5vh;
+	max-height: 90vh;
+	height: 90vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.bord{
+	margin: 0 auto;
+	width: 70%;
+	border-top: 2px solid #f19084;
+}
+.bord2{
+	margin-top: 5vh;
+	width: 70%;
+	border-top: 2px solid #f19084;
+}
+.bord3{
+	width: 90%;
+	border-top: 2px solid #f19084;
+}
+.logo_font{
+	margin-top: 2vh;
+	color: black;
+	font-family: Alexandra;
+	font-size: 4em;
+}
+.astro_style{
+	color: #f19084;
+	margin-top: 2vh;
+	font-style: italic;
+	font-size: 2em;
+}
+.photo{
+	opacity: 1;
+}
+.citata{
+
+	margin-top: 2vh;
+	color: black;
+	font-family: Alexandra;
+	font-size: 2.5em;
+
+}
+.text{
+	font-weight: bold;
+	font-size: 0.999em;
+	margin: 15px 0;
+}
+.red{
+	color: #e31e09;
+}

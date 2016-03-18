@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/img/crown.png" type="image/png">
+
+    <script src="js/less.js"></script>
+    <script src="js/jquery-2.2.0.js"></script>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <title>Астролог</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="well btn-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-3" align="center">
+                            <p class="bord"></p>
+                            <p class="logo_font">София Палех</p>
+                            <p class="astro_style">Астролог</p>
+                            <p class="bord2"></p>
+                            <ul class="nav nav-tabs nav-stacked">
+                                <li class="active">
+                                    <a data-toggle="tab" onclick="close_1()" href="#panel1">ГЛАВНАЯ</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" onclick="close_2()" href="#panel2">МОЯ ИСТОРИЯ</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" onclick="close_3()" href="#panel3">КОНСУЛЬТАЦИИ</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" onclick="close_4()" href="#panel4">НОВОСТИ</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" onclick="close_5()" href="#panel5">КОНТАКТЫ</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-xs-9">
+                            <div class="tab-content">
+                                <div id="panel1" class="tab-pane fade in active">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-11 col-lg-11">
+                                                <p class="bord3"></p>
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">
+                                                            <img class="photo" src="img/foto.png" style="max-width: 100%; height: auto;">
+                                                            <p class="citata">Мир совершенен.</p>
+                                                            <p class="citata">Каждая судьба совершенна.</p>
+                                                            <p class="citata">Несовершенно лишь понимание</p>
+                                                            <p class="citata">нами мира и судьбы.</p>
+                                                        </div>
+                                                        <div class="col-xs-7 col-sm-5">
+                                                            <p class="text marg">У Вас есть <span class="red">ВОПРОС</span> о Вашей жизни?
+                                                                <br />
+                                                                                 Ответ на который, для Вас неочевиден или недоступен…
+                                                            </p>
+                                                            <p class="text"><span class="red">Астрология</span> помогает понять, что происходит с Вами сейчас, и отвечает на многие «почему?» и «зачем?» в Вашей судьбе.</p>
+                                                            <p class="text"><span class="red">Астрология</span> поможет Вам углубить самосознание и самоанализ.</p>
+                                                            <p class="text"><span class="red"></span>Астрология дает способность проникать в суть событий , а также дает возможность к предвидению периодов и планированию важных шагов.</p>
+                                                            <p class="text"><span class="red">Астрология</span> – это проверенный веками инструмент для анализа и осмысления в трудные периоды Вашей жизни. Вы можете не только получить лучшее представление о том, «что происходит?», и «почему?», но также Вы сможете узнать: «как долго это будет продолжаться…?»</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div id="panel2" class="tab-pane fade">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <p class="bord3"></p>
+                                                2
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div id="panel3" class="tab-pane fade">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <p class="bord3"></p>
+                                                3
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div id="panel4" class="tab-pane fade">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <p class="bord3"></p>
+                                                4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div id="panel5" class="tab-pane fade">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <p class="bord3"></p>
+                                                5
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function close_1() {
+        $('#panel2').fadeOut('fast').delay(1000);
+        $('#panel3').fadeOut('fast').delay(1000);
+        $('#panel4').fadeOut('fast').delay(1000);
+        $('#panel5').fadeOut('fast').delay(1000);
+        $('#panel1').fadeIn();
+    }
+    function close_2() {
+        $('#panel1').fadeOut('fast').delay(1000);
+        $('#panel3').fadeOut('fast').delay(1000);
+        $('#panel4').fadeOut('fast').delay(1000);
+        $('#panel5').fadeOut('fast').delay(1000);
+        $('#panel2').fadeIn();
+    }
+    function close_3() {
+        $('#panel1').fadeOut('fast').delay(1000);
+        $('#panel2').fadeOut('fast').delay(1000);
+        $('#panel4').fadeOut('fast').delay(1000);
+        $('#panel5').fadeOut('fast').delay(1000);
+        $('#panel3').fadeIn();
+    }
+
+    function close_4() {
+        $('#panel1').fadeOut('fast').delay(1000);
+        $('#panel2').fadeOut('fast').delay(1000);
+        $('#panel3').fadeOut('fast').delay(1000);
+        $('#panel5').fadeOut('fast').delay(1000);
+        $('#panel4').fadeIn();
+    }
+    function close_5() {
+        $('#panel1').fadeOut('fast').delay(1000);
+        $('#panel2').fadeOut('fast').delay(1000);
+        $('#panel3').fadeOut('fast').delay(1000);
+        $('#panel4').fadeOut('fast').delay(1000);
+        $('#panel5').fadeIn();
+    }
+
+
+</script>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
