@@ -17,7 +17,7 @@ body {
 	margin-top: 5vh;
 	max-height: 90vh;
 	height: 90vh;
-	overflow-y: scroll;
+	overflow-y: auto;
 	overflow-x: hidden;
 }
 .bord{
@@ -27,6 +27,11 @@ body {
 }
 .bord2{
 	margin-top: 5vh;
+	width: 70%;
+	border-top: 2px solid #f19084;
+}
+.bord4{
+	margin-top: 4vh;
 	width: 70%;
 	border-top: 2px solid #f19084;
 }
@@ -41,7 +46,7 @@ body {
 	font-size: 4em;
 }
 .astro_style{
-	color: #f19084;
+	color: red;
 	margin-top: 2vh;
 	font-style: italic;
 	font-size: 2em;
@@ -64,4 +69,18 @@ body {
 }
 .red{
 	color: #e31e09;
+}
+.fade {
+  display: none;
+}
+.fade.in {
+  display: block;
+}
+.glyphicon-fast-backward{
+	margin-right: 5vw;
+}
+.arrow_style{
+	margin-top: 2vh;
+	color: red;
+	font-size: 2em;
 }

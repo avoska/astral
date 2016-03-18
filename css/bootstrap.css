@@ -5967,7 +5967,7 @@ button.close {
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
-  width: 50px;
+  width: 20px;
   height: 50px;
   overflow: scroll;
 }

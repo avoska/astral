@@ -45,8 +45,13 @@
                                 <li>
                                     <a data-toggle="tab" onclick="close_5()" href="#panel5">КОНТАКТЫ</a>
                                 </li>
-
                             </ul>
+                            <p class="bord2"></p>
+                            <p>
+                                <span class="glyphicon glyphicon-fast-backward arrow_style"></span>
+                                <span class="glyphicon glyphicon-fast-forward arrow_style"></span>
+                            </p>
+                            <p class="bord4"></p>
                         </div>
                         <div class="col-xs-9">
                             <div class="tab-content">
@@ -73,17 +78,17 @@
                                                             <p class="text"><span class="red">Астрология</span> поможет Вам углубить самосознание и самоанализ.</p>
                                                             <p class="text"><span class="red"></span>Астрология дает способность проникать в суть событий , а также дает возможность к предвидению периодов и планированию важных шагов.</p>
                                                             <p class="text"><span class="red">Астрология</span> – это проверенный веками инструмент для анализа и осмысления в трудные периоды Вашей жизни. Вы можете не только получить лучшее представление о том, «что происходит?», и «почему?», но также Вы сможете узнать: «как долго это будет продолжаться…?»</p>
-
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <p class="bord3"></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-content">
-                                <div id="panel2" class="tab-pane fade">
+                                <div id="panel2" class="tab-pane">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-xs-12">
@@ -95,7 +100,7 @@
                                 </div>
                             </div>
                             <div class="tab-content">
-                                <div id="panel3" class="tab-pane fade">
+                                <div id="panel3" class="tab-pane">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-xs-12">
@@ -107,7 +112,7 @@
                                 </div>
                             </div>
                             <div class="tab-content">
-                                <div id="panel4" class="tab-pane fade">
+                                <div id="panel4" class="tab-pane">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-xs-12">
@@ -119,7 +124,7 @@
                                 </div>
                             </div>
                             <div class="tab-content">
-                                <div id="panel5" class="tab-pane fade">
+                                <div id="panel5" class="tab-pane">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-xs-12">
@@ -138,43 +143,15 @@
     </div>
 </div>
 <script>
-    function close_1() {
-        $('#panel2').fadeOut('fast').delay(1000);
-        $('#panel3').fadeOut('fast').delay(1000);
-        $('#panel4').fadeOut('fast').delay(1000);
-        $('#panel5').fadeOut('fast').delay(1000);
-        $('#panel1').fadeIn();
-    }
-    function close_2() {
-        $('#panel1').fadeOut('fast').delay(1000);
-        $('#panel3').fadeOut('fast').delay(1000);
-        $('#panel4').fadeOut('fast').delay(1000);
-        $('#panel5').fadeOut('fast').delay(1000);
-        $('#panel2').fadeIn();
-    }
-    function close_3() {
-        $('#panel1').fadeOut('fast').delay(1000);
-        $('#panel2').fadeOut('fast').delay(1000);
-        $('#panel4').fadeOut('fast').delay(1000);
-        $('#panel5').fadeOut('fast').delay(1000);
-        $('#panel3').fadeIn();
-    }
+    $('[data-toggle=tab]').click(function() {
+      var tab = this.hash;
 
-    function close_4() {
-        $('#panel1').fadeOut('fast').delay(1000);
-        $('#panel2').fadeOut('fast').delay(1000);
-        $('#panel3').fadeOut('fast').delay(1000);
-        $('#panel5').fadeOut('fast').delay(1000);
-        $('#panel4').fadeIn();
-    }
-    function close_5() {
-        $('#panel1').fadeOut('fast').delay(1000);
-        $('#panel2').fadeOut('fast').delay(1000);
-        $('#panel3').fadeOut('fast').delay(1000);
-        $('#panel4').fadeOut('fast').delay(1000);
-        $('#panel5').fadeIn();
-    }
-
+      $('.tab-pane.active').fadeOut('fast')
+        .add('.active').add($(this).parent()).toggleClass('active')
+        .delay(500).promise().then(function() {
+          $(tab).addClass('active').fadeIn();
+        });
+    });
 
 </script>
 
