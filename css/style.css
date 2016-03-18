@@ -3,6 +3,7 @@
     src: url(../fonts/alexandra-zeferino-two.ttf);
    }
 body {
+	color: black;
 	background: url("../img/body_bg.jpg");
 	background-size: cover;
 	max-height: 100vh;
@@ -46,7 +47,7 @@ body {
 	font-size: 4em;
 }
 .astro_style{
-	color: red;
+	color: #e31e09;
 	margin-top: 2vh;
 	font-style: italic;
 	font-size: 2em;
@@ -81,6 +82,15 @@ body {
 }
 .arrow_style{
 	margin-top: 3vh;
-	color: red;
+	color: #e31e09;
 	font-size: 1em;
+}
+.header_style{
+	color: #e31e09;
+	font-size: 1.5em;
+	margin-top: 3vh;
+	margin-bottom: 2vh;
+}
+.glyphicon-forward{
+	margin-left: 1vw;
 }
