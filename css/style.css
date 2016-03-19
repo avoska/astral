@@ -28,17 +28,8 @@ body {
 
 }
 .bord{
+
 	margin: 0 auto;
-	width: 70%;
-	border-top: 2px solid #f19084;
-}
-.bord2{
-	margin-top: 5vh;
-	width: 70%;
-	border-top: 2px solid #f19084;
-}
-.bord4{
-	margin-top: 5vh;
 	width: 70%;
 	border-top: 2px solid #f19084;
 }
@@ -62,7 +53,6 @@ body {
 	opacity: 1;
 }
 .citata{
-
 	margin-top: 2vh;
 	color: black;
 	font-family: Alexandra;
@@ -104,7 +94,15 @@ body {
 	margin-top: 59vh;
 }
 .nav-tabs{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 	font-family: "Century Gothic";
 	text-decoration: none;
 	font-size: 1.5em;
+}
+a {
+	color: black ;
+}
+a:hover {
+	color: black ;
 }
