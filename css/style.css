@@ -20,6 +20,9 @@ body {
 	padding-right: 2vh;
 	padding-left: 2vh;
 }
+.menu_style{
+	margin-left: -5.4vw;
+}
 .well{
 	background: rgba(255, 255, 255, .75);
 	border-radius: 0;
@@ -34,7 +37,7 @@ body {
 .bord{
 
 	margin: 0 auto;
-	width: 70%;
+	width: 100%;
 	border-top: 2px solid #f19084;
 }
 .bord3{
@@ -79,11 +82,11 @@ body {
   display: block;
 }
 .glyphicon-fast-backward{
-	margin-bottom: 3vh;
+	margin-bottom: 6vh;
 	margin-right: 5vw;
 }
 .arrow_style{
-	margin-top: 4vh;
+	margin-top: 7vh;
 	color: #e31e09;
 	font-size: 1em;
 }
@@ -102,15 +105,15 @@ body {
 .nav-tabs{
 	font-weight: 500;
 	border-color: transparent;
-	margin-top: 5vh;
-	margin-bottom: 5vh;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
 	font-family: "avangardgothik";
 	font-size: 1.5em;
 }
 .nav-tabs:hover{
 	border-color: transparent;
-	margin-top: 5vh;
-	margin-bottom: 5vh;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
 	font-family: "avangardgothik";
 	text-decoration: none;
 	font-size: 1.5em;
@@ -129,9 +132,22 @@ a:hover {
 	border-color: transparent;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	margin-left: 2vw;
+	color: red;
 	background-color: transparent;
 	border-color: transparent;
 }
+.nav-tabs > li > a{
+	margin-left: 2vw;
+	padding-top: 7px;
+}
 .block_element_1{
 	height: 9vh;
+}
+.block_element_2{
+	height: 13vh;
+}
+
+.news_header{
+	font-size: 1.5em;
 }
