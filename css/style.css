@@ -11,9 +11,10 @@
 body {
 	color: black;
 	background: url("../img/body_bg2.jpg");
-	background-size: cover;
+	background-size: 100vw auto;
 	max-height: 100vh;
 	height: 100vh;
+
 }
 
 .color_1 {
@@ -170,7 +171,7 @@ a:hover {
 }
 
 .block_element_1 {
-	height: 9vh;
+	height: 16vh;
 }
 
 .block_element_2 {
