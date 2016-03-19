@@ -8,7 +8,7 @@
    }
 body {
 	color: black;
-	background: url("../img/body_bg.jpg");
+	background: url("../img/body_bg2.jpg");
 	background-size: cover;
 	max-height: 100vh;
 	height: 100vh;
@@ -132,13 +132,13 @@ a:hover {
 	border-color: transparent;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-	margin-left: 2vw;
+	margin-left: 1.6vw;
 	color: red;
 	background-color: transparent;
 	border-color: transparent;
 }
 .nav-tabs > li > a{
-	margin-left: 2vw;
+	margin-left: 1.6vw;
 	padding-top: 7px;
 }
 .block_element_1{
