@@ -34,7 +34,7 @@ body {
 	border-top: 2px solid #f19084;
 }
 .bord3{
-	width: 90%;
+	width: 100%;
 	border-top: 2px solid #f19084;
 }
 .logo_font{
@@ -47,7 +47,8 @@ body {
 	color: #e31e09;
 	margin-top: 2vh;
 	font-style: italic;
-	font-size: 2em;
+	font-size: 1.5em;
+	font-family: "Times New Roman";
 }
 .photo{
 	opacity: 1;
@@ -91,18 +92,38 @@ body {
 	margin-left: 1vw;
 }
 .consult_margin{
-	margin-top: 59vh;
+	margin-top: 51vh;
 }
 .nav-tabs{
+	border-color: transparent;
 	margin-top: 5vh;
 	margin-bottom: 5vh;
 	font-family: "Century Gothic";
 	text-decoration: none;
 	font-size: 1.5em;
 }
+.nav-tabs:hover{
+	background-color: transparent;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	font-family: "Century Gothic";
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
 a {
+	background-color: transparent;
 	color: black ;
 }
 a:hover {
+	background-color: transparent;
 	color: black ;
+}
+.nav-tabs> li > a:hover{
+	background-color: transparent;
+	border-color: transparent;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	background-color: transparent;
+	border-color: transparent;
 }
