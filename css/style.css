@@ -12,6 +12,10 @@ body {
 .color_1{
 	background-color: #F19084;
 }
+.main_margin{
+	padding-right: 2vh;
+	padding-left: 2vh;
+}
 .well{
 	background: rgba(255, 255, 255, .75);
 	border-radius: 0;
@@ -67,7 +71,7 @@ body {
 }
 .text{
 	font-weight: bold;
-	font-size: 0.999em;
+	font-size: 1em;
 	margin: 15px 0;
 }
 .red{
@@ -98,4 +102,9 @@ body {
 }
 .consult_margin{
 	margin-top: 59vh;
+}
+.nav-tabs{
+	font-family: "Century Gothic";
+	text-decoration: none;
+	font-size: 1.5em;
 }
