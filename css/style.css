@@ -79,7 +79,7 @@ body {
 	color: #e31e09;
 	font-size: 1em;
 	font-family: avangardgothik;
-	margin-top: -1vh;
+	margin-top: -2px;
 }
 
 .photo {
@@ -185,7 +185,7 @@ a:hover {
 }
 
 .block_element_1 {
-	margin-top: 6vh;
+	height: 9vh;
 }
 
 .block_element_2 {
