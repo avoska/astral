@@ -11,7 +11,7 @@
 body {
 	color: black;
 	background: url("../img/body_bg2.jpg");
-	background-size: 100vw 100vw;
+	background-size: cover;
 	max-height: 100vh;
 	height: 100vh;
 }
