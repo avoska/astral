@@ -1,29 +1,35 @@
 @font-face {
-    font-family: Alexandra;
-    src: url(../fonts/alexandra-zeferino-two.ttf);
-   }
+	font-family: Alexandra;
+	src: url(../fonts/alexandra-zeferino-two.ttf);
+}
+
 @font-face {
-    font-family: avangardgothik;
-    src: url(../fonts/AvantGardeGothicC.otf);
-   }
+	font-family: avangardgothik;
+	src: url(../fonts/AvantGardeGothicC.otf);
+}
+
 body {
 	color: black;
-	background: url("../img/body_bg2.jpg");
-	background-size: cover;
+	background: url("../img/body_bg2.jpg") center;
+	background-size: 100vw 100vh;
 	max-height: 100vh;
 	height: 100vh;
 }
-.color_1{
+
+.color_1 {
 	background-color: #F19084;
 }
-.main_margin{
+
+.main_margin {
 	padding-right: 2vh;
 	padding-left: 2vh;
 }
-.menu_style{
+
+.menu_style {
 	margin-left: -5.4vw;
 }
-.well{
+
+.well {
 	background: rgba(255, 255, 255, .75);
 	border-radius: 0;
 	margin-top: 2vh;
@@ -34,75 +40,91 @@ body {
 	overflow-x: hidden;
 
 }
-.bord{
+
+.bord {
 
 	margin: 0 auto;
 	width: 100%;
 	border-top: 2px solid #f19084;
 }
-.bord3{
+
+.bord3 {
 	width: 110%;
 	border-top: 2px solid #f19084;
 }
-.logo_font{
+
+.logo_font {
 	margin-top: 2vh;
 	color: black;
 	font-family: Alexandra;
 	font-size: 4.5em;
 }
-.astro_style{
+
+.astro_style {
 	color: #e31e09;
 	margin-top: 2vh;
 	font-style: italic;
 	font-size: 1.5em;
 	font-family: "Times New Roman";
 }
-.photo{
+
+.photo {
 	opacity: 1;
 }
-.citata{
+
+.citata {
 	margin-top: 2vh;
 	color: black;
 	font-family: Alexandra;
 	font-size: 2.5em;
 
 }
-.text{
+
+.text {
 	font-weight: bold;
 	font-size: 1em;
 	margin: 15px 0;
 }
-.red{
+
+.red {
 	color: #e31e09;
 }
+
 .fade {
-  display: none;
+	display: none;
 }
+
 .fade.in {
-  display: block;
+	display: block;
 }
-.glyphicon-fast-backward{
+
+.glyphicon-fast-backward {
 	margin-bottom: 6vh;
 	margin-right: 5vw;
 }
-.arrow_style{
+
+.arrow_style {
 	margin-top: 7vh;
 	color: #e31e09;
 	font-size: 1em;
 }
-.header_style{
+
+.header_style {
 	color: #e31e09;
 	font-size: 1.5em;
 	margin-top: 3vh;
 	margin-bottom: 2vh;
 }
-.glyphicon-forward{
+
+.glyphicon-forward {
 	margin-left: 1vw;
 }
-.consult_margin{
+
+.consult_margin {
 	margin-top: 51vh;
 }
-.nav-tabs{
+
+.nav-tabs {
 	font-weight: 500;
 	border-color: transparent;
 	margin-top: 3vh;
@@ -110,7 +132,8 @@ body {
 	font-family: "avangardgothik";
 	font-size: 1.5em;
 }
-.nav-tabs:hover{
+
+.nav-tabs:hover {
 	border-color: transparent;
 	margin-top: 3vh;
 	margin-bottom: 3vh;
@@ -121,33 +144,43 @@ body {
 
 a {
 	background-color: transparent;
-	color: black ;
+	color: black;
 }
+
 a:hover {
 	background-color: transparent;
-	color: black ;
+	color: black;
 }
-.nav-tabs> li > a:hover{
+
+.nav-tabs > li > a:hover {
 	background-color: transparent;
 	border-color: transparent;
 }
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
 	margin-left: 1.6vw;
 	color: red;
 	background-color: transparent;
 	border-color: transparent;
 }
-.nav-tabs > li > a{
+
+.nav-tabs > li > a {
 	margin-left: 1.6vw;
 	padding-top: 7px;
 }
-.block_element_1{
+
+.block_element_1 {
 	height: 9vh;
 }
-.block_element_2{
+
+.block_element_2 {
 	height: 13vh;
 }
 
-.news_header{
+.news_header {
 	font-size: 1.5em;
+}
+
+.news_link > a {
+	color: #7a8072;
 }
