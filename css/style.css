@@ -70,6 +70,7 @@ body {
 }
 
 .astro_style {
+	font-weight: 600;
 	margin-bottom: 7vh;
 	color: #e31e09;
 	font-size: 1em;
@@ -85,7 +86,7 @@ body {
 .citata {
 	margin-top: 2vh;
 	color: black;
-	font-family: Alexandra;
+	font-family: note;
 	font-size: 3em;
 
 }
@@ -193,7 +194,12 @@ a:hover {
 	height: 19vh;
 }
 .block_element_5 {
+	height: 5vh;
 }
+.block_element_6 {
+	height: 5vh;
+}
+
 
 .news_header {
 	font-size: 1.5em;
