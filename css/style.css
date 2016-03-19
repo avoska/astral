@@ -2,6 +2,10 @@
 	font-family: Alexandra;
 	src: url(../fonts/alexandra-zeferino-two.ttf);
 }
+@font-face {
+	font-family: note;
+	src: url(../fonts/ds_note.ttf);
+}
 
 @font-face {
 	font-family: avangardgothik;
@@ -10,8 +14,9 @@
 
 body {
 	color: black;
-	background: url("../img/body_bg2.jpg");
-	background-size: 100vw auto;
+	background: url('../img/body_bg1.jpg');
+	background-repeat: repeat-y;
+	background-size:  100vw auto ;
 	max-height: 100vh;
 	height: 100vh;
 
@@ -26,9 +31,7 @@ body {
 	padding-left: 2vh;
 }
 
-.menu_style {
-	margin-left: -5.4vw;
-}
+
 
 .well {
 	background: rgba(255, 255, 255, .75);
@@ -52,25 +55,31 @@ body {
 .bord3 {
 	width: 110%;
 	border-top: 2px solid #f19084;
+	margin-top: -2px;
+}
+.menu_style{
+	margin-left: -3vw;
 }
 
 .logo_font {
-	margin-top: 2vh;
+	margin-top: 5.5vh;
 	color: black;
-	font-family: Alexandra;
-	font-size: 4.5em;
+	font-family: note;
+	font-size: 3.4em;
+	margin-bottom: 0;
 }
 
 .astro_style {
+	margin-bottom: 7vh;
 	color: #e31e09;
-	margin-top: 2vh;
-	font-style: italic;
-	font-size: 1.5em;
-	font-family: "Times New Roman";
+	font-size: 1em;
+	font-family: avangardgothik;
+	margin-top: -1vh;
 }
 
 .photo {
-	opacity: 1;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
 }
 
 .citata {
@@ -82,8 +91,8 @@ body {
 }
 
 .text {
-	font-weight: bold;
-	font-size: 1em;
+	font-weight: 500;
+	font-size: 1.2em;
 	margin: 15px 0;
 }
 
@@ -171,11 +180,19 @@ a:hover {
 }
 
 .block_element_1 {
-	height: 16vh;
+	margin-top: 6vh;
 }
 
 .block_element_2 {
-	height: 13vh;
+	height: 9vh;
+}
+.block_element_3 {
+	height: 14vh;
+}
+.block_element_4 {
+	height: 19vh;
+}
+.block_element_5 {
 }
 
 .news_header {
@@ -184,4 +201,26 @@ a:hover {
 
 .news_link > a {
 	color: #7a8072;
+}
+.first_marg{
+	margin-top: 2vh;
+	margin-bottom: 10px;
+}
+
+.text_marg{
+	margin-top: 4vh;
+	margin-bottom: 10px;
+}
+.contacts{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	font-size: 1.8em;
+}
+.margin_text_column_left{
+	padding-left: 0;
+	margin-left: -2vw;
+	padding: 0;
+}
+.margin_text_column_right{
+	padding-right: 0;
 }
