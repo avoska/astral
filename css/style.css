@@ -38,7 +38,7 @@ body {
 	border-top: 2px solid #f19084;
 }
 .bord3{
-	width: 100%;
+	width: 110%;
 	border-top: 2px solid #f19084;
 }
 .logo_font{
@@ -79,10 +79,11 @@ body {
   display: block;
 }
 .glyphicon-fast-backward{
+	margin-bottom: 3vh;
 	margin-right: 5vw;
 }
 .arrow_style{
-	margin-top: 3vh;
+	margin-top: 4vh;
 	color: #e31e09;
 	font-size: 1em;
 }
@@ -130,4 +131,7 @@ a:hover {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
 	background-color: transparent;
 	border-color: transparent;
+}
+.block_element_1{
+	height: 9vh;
 }
