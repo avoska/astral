@@ -2,6 +2,10 @@
     font-family: Alexandra;
     src: url(../fonts/alexandra-zeferino-two.ttf);
    }
+@font-face {
+    font-family: avangardgothik;
+    src: url(../fonts/AvantGardeGothicC.otf);
+   }
 body {
 	color: black;
 	background: url("../img/body_bg.jpg");
@@ -41,7 +45,7 @@ body {
 	margin-top: 2vh;
 	color: black;
 	font-family: Alexandra;
-	font-size: 4em;
+	font-size: 4.5em;
 }
 .astro_style{
 	color: #e31e09;
@@ -95,18 +99,18 @@ body {
 	margin-top: 51vh;
 }
 .nav-tabs{
+	font-weight: 500;
 	border-color: transparent;
 	margin-top: 5vh;
 	margin-bottom: 5vh;
-	font-family: "Century Gothic";
-	text-decoration: none;
+	font-family: "avangardgothik";
 	font-size: 1.5em;
 }
 .nav-tabs:hover{
-	background-color: transparent;
+	border-color: transparent;
 	margin-top: 5vh;
 	margin-bottom: 5vh;
-	font-family: "Century Gothic";
+	font-family: "avangardgothik";
 	text-decoration: none;
 	font-size: 1.5em;
 }
