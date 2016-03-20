@@ -120,22 +120,20 @@
                                     </div>
                                 </div>
                             </div>
+                            <script>
+
+                                $('[data-toggle=tab]').click(function () {
+                                    var tab = this.hash;
+
+                                    $('.tab-pane.active').fadeOut('fast')
+                                            .add('.active').add($(this).parent()).toggleClass('active')
+                                            .delay(500).promise().then(function () {
+                                        $(tab).addClass('active').fadeIn();
+                                    });
+                                });
 
 
-                <script>
-
-                    $('[data-toggle=tab]').click(function () {
-                        var tab = this.hash;
-
-                        $('.tab-pane.active').fadeOut('fast')
-                                .add('.active').add($(this).parent()).toggleClass('active')
-                                .delay(500).promise().then(function () {
-                            $(tab).addClass('active').fadeIn();
-                        });
-                    });
-
-
-                </script>
-                <script src="js/bootstrap.min.js"></script>
+                            </script>
+                            <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

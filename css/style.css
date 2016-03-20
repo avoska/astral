@@ -52,8 +52,6 @@ body {
 	margin-bottom: 0;
 	max-height: 96vh;
 	height: 96vh;
-	width: 90vw;
-	margin-left: 4vw;
 	overflow-y: auto;
 	overflow-x: hidden;
 
@@ -68,12 +66,12 @@ body {
 }
 
 .bord3 {
-	width: 100%;
+	width: 110%;
 	border-top: 2px solid #f19084;
 	margin-top: -2px;
 }
 .menu_style{
-	margin-left: 0;
+	margin-left: -3vw;
 }
 
 .logo_font {
