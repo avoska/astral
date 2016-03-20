@@ -99,19 +99,19 @@
                                                 <p class="bord3"></p>
                                             </div>
                                         </div>
-                                        <div class="tab-content">
-                                            <div id="panel2" class="tab-pane">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div id="panel2" class="tab-pane">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-11 col-lg-11">
+                                                <p class="bord3"></p>
                                                 <div class="container-fluid">
                                                     <div class="row">
-                                                        <div class="col-xs-11 col-lg-11">
-                                                            <p class="bord3"></p>
-                                                            <div class="container-fluid">
-                                                                <div class="row">
-                                                                    <div class="col-xs-5">
-                                                                        123124123
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                        <div class="col-xs-5">
+                                                            123124123
                                                         </div>
                                                     </div>
                                                 </div>
@@ -120,28 +120,22 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-
-    $('[data-toggle=tab]').click(function () {
-        var tab = this.hash;
-
-        $('.tab-pane.active').fadeOut('fast')
-                .add('.active').add($(this).parent()).toggleClass('active')
-                .delay(500).promise().then(function () {
-            $(tab).addClass('active').fadeIn();
-        });
-    });
 
 
-</script>
-<script src="js/bootstrap.min.js"></script>
+                <script>
+
+                    $('[data-toggle=tab]').click(function () {
+                        var tab = this.hash;
+
+                        $('.tab-pane.active').fadeOut('fast')
+                                .add('.active').add($(this).parent()).toggleClass('active')
+                                .delay(500).promise().then(function () {
+                            $(tab).addClass('active').fadeIn();
+                        });
+                    });
+
+
+                </script>
+                <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
