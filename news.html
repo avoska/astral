@@ -39,7 +39,6 @@
     <title>Астролог</title>
 </head>
 <body>
-<div id="page-preloader"><span class="spinner"></span></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 main_margin">
@@ -53,7 +52,7 @@
                             <p align="center" class="bord logo_bottom"></p>
                             <p class="block_element_6"></p>
                             <ul class="nav nav-tabs nav-stacked">
-                                <li class="active">
+                                <li>
                                     <a href="index.html">ГЛАВНАЯ</a>
                                 </li>
                                 <li>
@@ -63,7 +62,7 @@
                                     <a href="consult.html">КОНСУЛЬТАЦИИ</a>
                                 </li>
                                 <li>
-                                    <a href="news.html">НОВОСТИ</a>
+                                    <a class="red" href="news.html">НОВОСТИ</a>
                                 </li>
                                 <li>
                                     <a href="contacts.html">КОНТАКТЫ</a>
@@ -78,34 +77,44 @@
                         </div>
                         <div class="col-xs-9">
                             <div class="tab-content">
-                                <div id="panel1" class="tab-pane fade in active">
+                                <div id="panel1" class="tab-pane active">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-xs-12">
                                                 <p class="bord3"></p>
                                                 <div class="container-fluid">
                                                     <div class="row">
-                                                        <div class="col-xs-6 margin_text_column_right">
-                                                            <img class="photo" src="img/foto.png" style="max-width: 75%; height: auto;">
-                                                            <p class="citata">Мир совершенен.</p>
-                                                            <p class="citata">Каждая судьба совершенна.</p>
-                                                            <p class="citata">Несовершенно лишь понимание</p>
-                                                            <p class="citata">нами мира и судьбы.</p>
-                                                        </div>
-                                                        <div class="col-xs-6 margin_text_column_left">
-                                                            <p class="text marg first_marg">У Вас есть <span class="red">ВОПРОС</span> о Вашей жизни?
-                                                                <br />
-                                                                                            Ответ на который, для Вас неочевиден или недоступен…
+                                                        <div class="col-xs-12">
+                                                            <p class="header_style">НОВОСТИ</p>
+                                                            <p class="news_header">Семинар "периоды" 1 апреля 2016.</p>
+                                                            <p class="news_body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled....</p>
+                                                            <p class="news_link">
+                                                                <a data-toggle="tab" href="#panel2">читать дальше>></a>
                                                             </p>
-                                                            <p class="text text_marg"><span class="red">Астрология</span> помогает понять, что происходит с Вами сейчас, и отвечает на многие «почему?» и «зачем?» в Вашей судьбе.</p>
-                                                            <p class="text text_marg"><span class="red">Астрология</span> поможет Вам углубить самосознание и самоанализ.</p>
-                                                            <p class="text text_marg"><span class="red">Астрология</span> дает способность проникать в суть событий , а также дает возможность к предвидению периодов и планированию важных шагов.</p>
-                                                            <p class="text text_marg"><span class="red">Астрология</span> – это проверенный веками инструмент для анализа и осмысления в трудные периоды Вашей жизни. Вы можете не только получить лучшее представление о том, «что происходит?», и «почему?», но также Вы сможете узнать: «как долго это будет продолжаться…?»</p>
+
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="block_element_1"></p>
+                                                <p class="block_element_3"></p>
                                                 <p class="bord3"></p>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div id="panel2" class="tab-pane">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-xs-11 col-lg-11">
+                                                            <p class="bord3"></p>
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-xs-5">
+                                                                        123124123
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -119,13 +128,18 @@
     </div>
 </div>
 
-
 <script>
-    $(window).on('load', function () {
-        var $preloader = $('#page-preloader'), $spinner = $preloader.find('.spinner');
-        $spinner.fadeOut();
-        $preloader.delay(350).fadeOut('slow');
+
+    $('[data-toggle=tab]').click(function () {
+        var tab = this.hash;
+
+        $('.tab-pane.active').fadeOut('fast')
+                .add('.active').add($(this).parent()).toggleClass('active')
+                .delay(500).promise().then(function () {
+            $(tab).addClass('active').fadeIn();
+        });
     });
+
 
 </script>
 <script src="js/bootstrap.min.js"></script>
