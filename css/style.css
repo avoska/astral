@@ -277,10 +277,20 @@ a:hover {
 	font-family: "Calibri", sans-serif;
 }
 .news_text{
-	font-size: 1em;
+	font-size: 1.2em;
+	font-family: "Calibri", sans-serif;
+}
+.oplata_text{
+	font-size: 1.2em;
 	font-family: "Calibri", sans-serif;
 }
 .oplata{
 	font-size: 1.5em;
 	font-family: "Calibri", sans-serif;
+}
+.oplata_left{
+	margin-top: 10vh;
+}
+.blue{
+	color: blue;
 }

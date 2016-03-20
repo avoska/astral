@@ -41,9 +41,8 @@
                             <p align="center" class="logo_font">София Палех</p>
                             <p align="center" class="astro_style">АСТРОЛОГ</p>
                             <p align="center" class="bord logo_bottom"></p>
-                            <p class="block_element_6"></p>
                             <ul class="nav nav-tabs nav-stacked">
-                                <li class="active">
+                                <li>
                                     <a href="index.html">ГЛАВНАЯ</a>
                                 </li>
                                 <li>
@@ -59,10 +58,10 @@
                                     <a href="contacts.html">КОНТАКТЫ</a>
                                 </li>
                             </ul>
-                            <p class="block_element_6"></p>
                             <p class="bord"></p>
                             <p align="center">
-                                <span class="glyphicon glyphicon-fast-backward arrow_style"></span> <span class="glyphicon glyphicon-fast-forward arrow_style"></span>
+                                <a href="consult.html"><span class="glyphicon glyphicon-fast-backward arrow_style"></span></a>
+                                <a href="index.html"><span class="glyphicon glyphicon-fast-forward arrow_style"></span></a>
                             </p>
                             <p class="bord"></p>
                         </div>
@@ -73,25 +72,29 @@
                                         <div class="row">
                                             <div class="col-xs-12">
                                                 <p class="bord3"></p>
-                                                <div class="container-fluid">
+                                                <div class="container-fluid oplata_text">
                                                     <div class="row">
                                                         <div class="col-xs-6 margin_text_column_right">
-                                                            <img class="photo" src="img/foto.png" style="max-width: 75%; height: auto;">
-                                                            <p class="citata">Мир совершенен.</p>
-                                                            <p class="citata">Каждая судьба совершенна.</p>
-                                                            <p class="citata">Несовершенно лишь понимание</p>
-                                                            <p class="citata">нами мира и судьбы.</p>
-                                                        </div>
-                                                        <div class="col-xs-6 margin_text_column_left">
-                                                            <p class="text marg first_marg">У Вас есть <span class="red">ВОПРОС</span> о Вашей жизни?
-                                                                <br />
-                                                                                            Ответ на который, для Вас неочевиден или недоступен…
+                                                            <p class="header_style">ОПЛАТА КОНСУЛЬТAЦИИ</p>
+                                                            <p class="red text">Вы живете в России. </p>
+                                                            <p>1. Оплатить консультацию Вы можете непосредственно на личной встрече.</p>
+                                                            <p>2. На счет <span class="blue">WebMoney</span> - средство электронных платежей через интернет. Комиссия системы за перевод 0.8% </p>
+                                                            <p>оплата в долларах на Z-кошелек: Z736908490397 </p>
+                                                            <p>оплата в рублях на R-кошелек: R418970076450</p>
+                                                            <p>На рублевый кошелек можно переводить с кошелька Вебмани, через терминалы, с банковского счета, и через кредитную карту.</p>
+                                                            <br />
+                                                            <p>3. На счет <span class="blue">Яндекс-деньги</span>
                                                             </p>
-                                                            <p class="text text_marg"><span class="red">Астрология</span> помогает понять, что происходит с Вами сейчас, и отвечает на многие «почему?» и «зачем?» в Вашей судьбе.</p>
-                                                            <p class="text text_marg"><span class="red">Астрология</span> поможет Вам углубить самосознание и самоанализ.</p>
-                                                            <p class="text text_marg"><span class="red">Астрология</span> дает способность проникать в суть событий , а также дает возможность к предвидению периодов и планированию важных шагов.</p>
-                                                            <p class="text text_marg"><span class="red">Астрология</span> – это проверенный веками инструмент для анализа и осмысления в трудные периоды Вашей жизни. Вы можете не только получить лучшее представление о том, «что происходит?», и «почему?», но также Вы сможете узнать: «как долго это будет продолжаться…?»</p>
+                                                            <p>Номер счета: 410012818620788</p>
+                                                            <p>Можно оплатить в рублях с банковского счета, и с банковской карты. </p>
+                                                            <p>4. На банковский счет. Перевод в рублях.Напишите мне, я сообщу Вам реквизиты для перевода.</p>
                                                         </div>
+                                                        <div class="col-xs-6 margin_text_column_right">
+                                                            <p class="red text oplata_left">Вы не живете в России. </p>
+                                                            <p>5. На банковский счет в валюте. Перевод в долларах или в евро . Напишите мне письмо, я сообщу Вам реквизиты для перевода.</p>
+                                                            <p class="text">Если Вы не можете выбрать подходящий Вам вариант, напишите мне , где Вы живете, найдем какое-то решение.</p>
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                                 <p class="block_element_1"></p>
@@ -111,8 +114,7 @@
 <script>
     $(window).on('load', function () {
         var $preloader = $('#page-preloader'), $spinner = $preloader.find('.spinner');
-        $spinner.fadeOut();
-        $preloader.delay(350).fadeOut('slow');
+        $preloader.delay(500).fadeOut('slow');
     });
 </script>
 
