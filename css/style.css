@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: Alexandra;
 	src: url(../fonts/alexandra-zeferino-two.ttf);
@@ -15,6 +16,13 @@
 	font-family: avangardgothik;
 	src: url(../fonts/AvantGardeGothicC.otf);
 }
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #F19084; }
+::-webkit-scrollbar-track {  background-color: #F19084;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #F19084; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}
 
 body {
 	color: black;
@@ -46,6 +54,7 @@ body {
 	height: 96vh;
 	overflow-y: auto;
 	overflow-x: hidden;
+
 
 }
 

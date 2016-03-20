@@ -14,10 +14,32 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <style>
+        #page-preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, .75);
+            z-index: 100500;
+        }
+
+        #page-preloader .spinner {
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: url('/img/preloader.gif') no-repeat;
+            margin: -16px 0 0 -16px;
+        }
+    </style>
 
     <title>Астролог</title>
 </head>
 <body>
+<div id="page-preloader"><span class="spinner"></span></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 main_margin">
@@ -29,7 +51,7 @@
                             <p align="center" class="logo_font">София Палех</p>
                             <p align="center" class="astro_style">АСТРОЛОГ</p>
                             <p align="center" class="bord logo_bottom"></p>
-							<p class="block_element_6"></p>
+                            <p class="block_element_6"></p>
                             <ul class="nav nav-tabs nav-stacked">
                                 <li class="active">
                                     <a data-toggle="tab" href="#panel1">ГЛАВНАЯ</a>
@@ -47,7 +69,7 @@
                                     <a data-toggle="tab" href="#panel5">КОНТАКТЫ</a>
                                 </li>
                             </ul>
-							<p class="block_element_6"></p>
+                            <p class="block_element_6"></p>
                             <p class="bord"></p>
                             <p align="center">
                                 <span class="glyphicon glyphicon-fast-backward arrow_style"></span> <span class="glyphicon glyphicon-fast-forward arrow_style"></span>
@@ -70,7 +92,7 @@
                                                             <p class="citata">Несовершенно лишь понимание</p>
                                                             <p class="citata">нами мира и судьбы.</p>
                                                         </div>
-                                                        <div class="col-xs-6 margin_text_column_left" >
+                                                        <div class="col-xs-6 margin_text_column_left">
                                                             <p class="text marg first_marg">У Вас есть <span class="red">ВОПРОС</span> о Вашей жизни?
                                                                 <br />
                                                                                             Ответ на который, для Вас неочевиден или недоступен…
@@ -292,6 +314,13 @@
                 </div>
 
                 <script>
+                    $(window).on('load', function () {
+                        var $preloader = $('#page-preloader'),
+                            $spinner   = $preloader.find('.spinner');
+                        $spinner.fadeOut();
+                        $preloader.delay(350).fadeOut('slow');
+                    });
+
                     $('[data-toggle=tab]').click(function () {
                         var tab = this.hash;
 
