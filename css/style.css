@@ -54,12 +54,21 @@ body {
 	height: 96vh;
 	overflow-y: auto;
 	overflow-x: hidden;
-
-
+}
+.well_news {
+	background: rgba(255, 255, 255, .75);
+	border-radius: 0;
+	margin-top: 2vh;
+	margin-bottom: 0;
+	max-height: 96vh;
+	height: 96vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 86vw;
+	margin-left: 2vw;
 }
 
 .bord {
-
 	margin: 0 auto;
 	width: 100%;
 	border-top: 2px solid #f19084;
@@ -68,10 +77,12 @@ body {
 .bord3 {
 	width: 110%;
 	border-top: 2px solid #f19084;
-	margin-top: -2px;
 }
 .menu_style{
 	margin-left: -3vw;
+}
+.menu_style_news{
+	margin-left: -2vw;
 }
 
 .logo_font {
@@ -212,6 +223,15 @@ a:hover {
 .block_element_6 {
 	height: 5vh;
 }
+.block_element_6_history {
+	height: 0.5vh;
+}
+.block_element_7_history{
+	margin-top: 2vh;
+}
+.block_element_8_news{
+	height: 2vh;
+}
 
 
 .news_header {
@@ -242,4 +262,8 @@ a:hover {
 }
 .margin_text_column_right{
 	padding-right: 0;
+}
+.history_text{
+	font-size: 1.2em;
+	font-family: "Calibri", sans-serif;
 }
