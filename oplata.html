@@ -16,8 +16,20 @@
 
 
     <title>Астролог</title>
+    <style>
+        #page-preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, .75);
+            z-index: 100500;
+        }
+    </style>
 </head>
 <body>
+<div id="page-preloader"><span class="spinner"></span></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 main_margin">
@@ -96,6 +108,13 @@
         </div>
     </div>
 </div>
+<script>
+    $(window).on('load', function () {
+        var $preloader = $('#page-preloader'), $spinner = $preloader.find('.spinner');
+        $spinner.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
+    });
+</script>
 
 <script src="js/bootstrap.min.js"></script>
 </body>
