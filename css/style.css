@@ -154,13 +154,19 @@ body {
 	margin-top: 3vh;
 	margin-bottom: 2vh;
 }
+.header_style_consult {
+	color: #e31e09;
+	font-size: 1.5em;
+	margin-top: 2.5vh;
+	margin-bottom: 2vh;
+}
 
 .glyphicon-forward {
 	margin-left: 1vw;
 }
 
 .consult_margin {
-	margin-top: 51vh;
+	margin-top: 56vh;
 }
 
 .nav-tabs {
@@ -236,6 +242,9 @@ a:hover {
 .block_element_8_news{
 	height: 2vh;
 }
+.block_element_9_consult{
+	height: 6.5vh;
+}
 
 
 .news_header {
@@ -269,5 +278,13 @@ a:hover {
 }
 .history_text{
 	font-size: 1.2em;
+	font-family: "Calibri", sans-serif;
+}
+.consult_text{
+	font-size: 1.2em;
+	font-family: "Calibri", sans-serif;
+}
+.oplata{
+	font-size: 1.5em;
 	font-family: "Calibri", sans-serif;
 }
