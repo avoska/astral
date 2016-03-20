@@ -14,27 +14,6 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <style>
-        #page-preloader {
-            position: fixed;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, .75);
-            z-index: 100500;
-        }
-
-        #page-preloader .spinner {
-            width: 64px;
-            height: 64px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            background: url('preloader.gif') no-repeat;
-            margin: -16px 0 0 -16px;
-        }
-    </style>
 
     <title>Астролог</title>
 </head>
@@ -126,14 +105,6 @@
     </div>
 </div>
 
-<script>
-    $(window).on('load', function () {
-              var $preloader = $('#page-preloader'), $spinner = $preloader.find('.spinner');
-              $spinner.delay(1000).fadeOut();
-              $preloader.delay(1000).fadeOut('slow');
-          });
-
-</script>
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
