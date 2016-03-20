@@ -78,11 +78,15 @@ body {
 	width: 110%;
 	border-top: 2px solid #f19084;
 }
+.bord3_news {
+	width: 100%;
+	border-top: 2px solid #f19084;
+}
 .menu_style{
 	margin-left: -3vw;
 }
 .menu_style_news{
-	margin-left: -2vw;
+	margin-left: -2.5vw;
 }
 
 .logo_font {
