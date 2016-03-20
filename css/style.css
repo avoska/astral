@@ -64,8 +64,8 @@ body {
 	height: 96vh;
 	overflow-y: auto;
 	overflow-x: hidden;
-	width: 90vw;
-	margin-left: 2vw;
+	width: 92vw;
+	margin-left: 4vw;
 }
 
 .bord {
@@ -86,7 +86,7 @@ body {
 	margin-left: -3vw;
 }
 .menu_style_news{
-	margin-left: -2.5vw;
+	margin-left: -1vw;
 }
 
 .logo_font {
